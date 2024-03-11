@@ -57,3 +57,4 @@ D:\3 курс\Декларативное программирование\FastFo
 D:\3 курс\Декларативное программирование\FastFoodProject\FastFoodProject\obj\Debug\FastFoodProject.csproj.CopyComplete
 D:\3 курс\Декларативное программирование\FastFoodProject\FastFoodProject\obj\Debug\FastFoodProject.dll
 D:\3 курс\Декларативное программирование\FastFoodProject\FastFoodProject\obj\Debug\FastFoodProject.pdb
+D:\3 курс\Декларативное программирование\FastFoodProject\FastFoodProject\bin\itextsharp.dll

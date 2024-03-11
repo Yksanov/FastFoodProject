@@ -22,7 +22,14 @@ namespace FastFoodProject.Admin
             if(!IsPostBack)
             {
                 Session["breadCrum"] = "Category";
-                getCategories();
+                if (Session["admin"] == null)
+                {
+                    Response.Redirect("../User/Login.aspx");
+                }
+                else
+                {
+                    getCategories();
+                }                
             }
             lblMsg.Visible = false;
         }
@@ -34,7 +41,7 @@ namespace FastFoodProject.Admin
             int categoryId = Convert.ToInt32(hdnId.Value);
             con = new SqlConnection(Connection.GetConnectionString());
             cmd = new SqlCommand("Category_Crud", con);
-            cmd.Parameters.AddWithValue("@Action", categoryId == 0 ? "iNSERT" : "UPDATE");
+            cmd.Parameters.AddWithValue("@Action", categoryId == 0 ? "INSERT" : "UPDATE");
             cmd.Parameters.AddWithValue("CategoryId", categoryId);
             cmd.Parameters.AddWithValue("@Name", txtName.Text.Trim());
             cmd.Parameters.AddWithValue("@IsActive", cbIsActive.Checked);

@@ -18,7 +18,7 @@
   <meta name="author" content="" />
   <link rel="shortcut icon" href="../TemplateFiles/images/favicon.png" type="">
 
-  <title> Feane </title>
+  <title> Restaurant Alatoo </title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="../TemplateFiles/css/bootstrap.css" />
@@ -67,7 +67,7 @@
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
             <span>
-              Feane
+              Restaurant Alatoo
             </span>
           </a>
 
@@ -91,10 +91,14 @@
               </li>
             </ul>
             <div class="user_option">
-              <a href="" class="user_link">
+                <asp:LinkButton ID="lbRegisterOrProfile" runat="server" CssClass="user_link" OnClick="lbRegisterOrProfile_Click" CausesValidation="false">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </asp:LinkButton>
+
+              <%--<a href="" class="user_link">
                 <i class="fa fa-user" aria-hidden="true"></i>
-              </a>
-              <a class="cart_link" href="#">
+              </a>--%>
+              <a class="cart_link" href="Cart.aspx">
                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                   <g>
                     <g>
@@ -147,15 +151,20 @@
                   <g>
                   </g>
                 </svg>
+                  <span class="badge rounded-pill bg-warning mb-4">
+                      <% Response.Write(Session["cartCount"]); %>
+                  </span>
               </a>
-              <form class="form-inline">
+              <div class="form-inline">
                 <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
                   <i class="fa fa-search" aria-hidden="true"></i>
                 </button>
-              </form>
-              <a href="" class="order_online">
+              </div>
+              <%--<a href="" class="order_online">
                 Order Online
-              </a>
+              </a>--%>
+                <asp:LinkButton ID="lbLoginOrLogout" runat="server" CssClass="order_online" CausesValidation="false"
+                    OnClick="lbLoginOrLogout_Click"></asp:LinkButton>
             </div>
           </div>
         </nav>
@@ -190,13 +199,13 @@
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span>
-                  Call +01 1234567890
+                  Call +996 551952510
                 </span>
               </a>
               <a href="">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <span>
-                  demo@gmail.com
+                  elsosyksanov@gmail.com
                 </span>
               </a>
             </div>
@@ -205,25 +214,25 @@
         <div class="col-md-4 footer-col">
           <div class="footer_detail">
             <a href="" class="footer-logo">
-              Feane
+              Restaurant Alatoo
             </a>
             <p>
               Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with
             </p>
             <div class="footer_social">
-              <a href="">
+              <a class="nav-link" href="https://www.pinterest.com/feecbook0490/">
                 <i class="fa fa-facebook" aria-hidden="true"></i>
               </a>
-              <a href="">
+              <a class="nav-link" href="https://twitter.com/i/flow/login">
                 <i class="fa fa-twitter" aria-hidden="true"></i>
               </a>
-              <a href="">
+              <a class="nav-link" href="https://twitter.com/LinkedIn">
                 <i class="fa fa-linkedin" aria-hidden="true"></i>
               </a>
-              <a href="">
+              <a class="nav-link" href="https://www.instagram.com/">
                 <i class="fa fa-instagram" aria-hidden="true"></i>
               </a>
-              <a href="">
+              <a class="nav-link" href="https://www.pinterest.com/">
                 <i class="fa fa-pinterest" aria-hidden="true"></i>
               </a>
             </div>
