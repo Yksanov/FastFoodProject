@@ -14,7 +14,7 @@
                             <div class="card widget-card-1">
                                 <div class="card-block-small">
                                     <i class="icofont icofont-muffin bg-c-blue card1-icon"></i>
-                                    <span class="text-c-blue f-w-600">Categories</span>
+                                    <span class="text-c-blue f-w-600">Категории</span>
                                     <h4> <% Response.Write(Session["category"]); %> </h4>
                                     <div>
                                         <span class="f-left m-t-10 text-muted">
@@ -29,7 +29,7 @@
                             <div class="card widget-card-1">
                                 <div class="card-block-small">
                                     <i class="icofont icofont-fast-food bg-c-pink card1-icon"></i>
-                                    <span class="text-c-pink f-w-600">Products</span>
+                                    <span class="text-c-pink f-w-600">Продукты</span>
                                     <h4> <% Response.Write(Session["product"]); %> </h4>
                                     <div>
                                         <span class="f-left m-t-10 text-muted">
@@ -44,7 +44,7 @@
                             <div class="card widget-card-1">
                                 <div class="card-block-small">
                                     <i class="icofont icofont-spoon-and-fork bg-c-blue card1-icon"></i>
-                                    <span class="text-c-green f-w-600">Total Orders</span>
+                                    <span class="text-c-green f-w-600">Всего заказов</span>
                                     <h4> <% Response.Write(Session["order"]); %> </h4>
                                     <div>
                                         <span class="f-left m-t-10 text-muted">
@@ -59,7 +59,7 @@
                             <div class="card widget-card-1">
                                 <div class="card-block-small">
                                     <i class="icofont icofont-fast-delivery bg-c-pink card1-icon"></i>
-                                    <span class="text-c-yellow f-w-600">Delivered Items</span>
+                                    <span class="text-c-yellow f-w-600">Доставленные товары</span>
                                     <h4> <% Response.Write(Session["delivered"]); %> </h4>
                                     <div>
                                         <span class="f-left m-t-10 text-muted">
@@ -78,7 +78,7 @@
                             <div class="card widget-card-1">
                                 <div class="card-block-small">
                                     <i class="icofont icofont-delivery-time bg-c-pink card1-icon"></i>
-                                    <span class="text-c-blue f-w-600">Pending Items</span>
+                                    <span class="text-c-blue f-w-600">Блюда в ожидании</span>
                                     <h4> <% Response.Write(Session["pending"]); %> </h4>
                                     <div>
                                         <span class="f-left m-t-10 text-muted">
@@ -93,7 +93,7 @@
                             <div class="card widget-card-1">
                                 <div class="card-block-small">
                                     <i class="icofont icofont-users-social bg-c-blue card1-icon"></i>
-                                    <span class="text-c-pink f-w-600">Users</span>
+                                    <span class="text-c-pink f-w-600">Пользователи</span>
                                     <h4> <% Response.Write(Session["user"]); %> </h4>
                                     <div>
                                         <span class="f-left m-t-10 text-muted">
@@ -108,7 +108,7 @@
                             <div class="card widget-card-1">
                                 <div class="card-block-small">
                                     <i class="icofont icofont-money-bag bg-c-pink card1-icon"></i>
-                                    <span class="text-c-green f-w-600">Sold Amount</span>
+                                    <span class="text-c-green f-w-600">Сумма продаж</span>
                                     <h4><% Response.Write(Session["soldAmount"]); %></h4>
                                     <div>
                                         <span class="f-left m-t-10 text-muted">
@@ -123,7 +123,7 @@
                             <div class="card widget-card-1">
                                 <div class="card-block-small">
                                     <i class="icofont icofont-support-faq bg-c-yellow card1-icon"></i>
-                                    <span class="text-c-yellow f-w-600">Feedbacks</span>
+                                    <span class="text-c-yellow f-w-600">Отзывы</span>
                                     <h4><% Response.Write(Session["contact"]); %></h4>
                                     <div>
                                         <span class="f-left m-t-10 text-muted">

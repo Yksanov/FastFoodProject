@@ -36,7 +36,7 @@
                       ForeColor="Red" Display="Dynamic" SetFocusOnError="true"></asp:RequiredFieldValidator>
               </div>
               <div>
-                <asp:TextBox ID="txtSubject" runat="server" CssClass="form-control" placeholder="Предмет" ></asp:TextBox>
+                <asp:TextBox ID="txtSubject" runat="server" CssClass="form-control" placeholder="Телефон номер" ></asp:TextBox>
                   <asp:RequiredFieldValidator ID="rfvSubject" runat="server" ErrorMessage="Subject is required" ControlToValidate="txtSubject"
                       ForeColor="Red" Display="Dynamic" SetFocusOnError="true"></asp:RequiredFieldValidator>
               </div>

@@ -22,11 +22,11 @@
                     <table class="table">
                         <thead>
                             <tr>
-                                <th>Name</th>
-                                <th>Image</th>
-                                <th>Unit Price</th>
-                                <th>Quantity</th>
-                                <th>Total Price</th>
+                                <th>Название блюд</th>
+                                <th>Фото</th>
+                                <th>Цена</th>
+                                <th>Количество</th>
+                                <th>Итоговая цена</th>
                                 <th></th>
                             </tr>
                         </thead>

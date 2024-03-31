@@ -46,7 +46,7 @@
                             <asp:RegularExpressionValidator ID="revName" runat="server" ErrorMessage="Name must be in characters only"
                                 ForeColor="Red" Display="Dynamic" SetFocusOnError="true" ValidationExpression="^[a-zA-Z\s]+$"
                                 ControlToValidate="txtName"></asp:RegularExpressionValidator>
-                            <asp:TextBox ID="txtName" runat="server" CssClass="form-control" placeholder="Введите полное имя"
+                            <asp:TextBox ID="txtName" runat="server" CssClass="form-control" placeholder="Введите фамилию"
                                 ToolTip="Full Name"></asp:TextBox>
                         </div>
 
@@ -60,7 +60,7 @@
                          <div>
                             <asp:RequiredFieldValidator ID="rfvEmail" runat="server" ErrorMessage="Email is required"
                                 ControlToValidate="txtEmail" ForeColor="Red" Display="Dynamic" SetFocusOnError="true"></asp:RequiredFieldValidator>
-                            <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" placeholder="Введите Email"
+                            <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" placeholder="Введите email"
                                 ToolTip="Email" TextMode="Email"></asp:TextBox>
                         </div>
 
@@ -70,7 +70,7 @@
                             <asp:RegularExpressionValidator ID="revMobile" runat="server" ErrorMessage="Mobile No. must have 10 digits"
                                 ForeColor="Red" Display="Dynamic" SetFocusOnError="true" ValidationExpression="^[0-9]{10}$"
                                 ControlToValidate="txtMobile"></asp:RegularExpressionValidator>
-                            <asp:TextBox ID="txtMobile" runat="server" CssClass="form-control" placeholder="Введите Телефон номер"
+                            <asp:TextBox ID="txtMobile" runat="server" CssClass="form-control" placeholder="Введите телефон номер"
                                 ToolTip="Mobile Number" TextMode="Number"></asp:TextBox>
                         </div>
 
@@ -84,11 +84,11 @@
                             <asp:RequiredFieldValidator ID="rfvAddress" runat="server" ErrorMessage="Address is required" 
                                 ControlToValidate="txtAddress"
                                 ForeColor="Red" Display="Dynamic" SetFocusOnError="true"></asp:RequiredFieldValidator>
-                            <asp:TextBox ID="txtAddress" runat="server" CssClass="form-control" placeholder="Введите Адрес"
+                            <asp:TextBox ID="txtAddress" runat="server" CssClass="form-control" placeholder="Введите адрес"
                                 ToolTip="Address" TextMode="MultiLine"></asp:TextBox>
                         </div>
 
-                        <div>
+                        <%--<div>
                             <asp:RequiredFieldValidator ID="rfvPostCode" runat="server" ErrorMessage="Post/Zip Code is required"
                                 ControlToValidate="txtPostCode" ForeColor="Red" Display="Dynamic" SetFocusOnError="true"></asp:RequiredFieldValidator>
                             <asp:RegularExpressionValidator ID="revPostCode" runat="server" ErrorMessage="Post/Zip Code be of 6 digits"
@@ -96,7 +96,7 @@
                                 ControlToValidate="txtPostCode"></asp:RegularExpressionValidator>
                             <asp:TextBox ID="txtPostCode" runat="server" CssClass="form-control" placeholder="Enter Post/Zip Code"
                                 ToolTip="Post/Zip Code" TextMode="Number"></asp:TextBox>
-                        </div> 
+                        </div> --%>
                         
                          <div>
                             <asp:FileUpload ID="fuUserImage" runat="server" CssClass="form-control" ToolTip="User Image" 

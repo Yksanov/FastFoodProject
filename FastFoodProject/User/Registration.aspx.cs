@@ -46,7 +46,7 @@ namespace FastFoodProject.User
             cmd.Parameters.AddWithValue("@Mobile", txtMobile.Text.Trim());
             cmd.Parameters.AddWithValue("@Email", txtEmail.Text.Trim());
             cmd.Parameters.AddWithValue("@Address", txtAddress.Text.Trim());
-            cmd.Parameters.AddWithValue("@PostCode", txtPostCode.Text.Trim());
+            //cmd.Parameters.AddWithValue("@PostCode", txtPostCode.Text.Trim());
             cmd.Parameters.AddWithValue("@Password", txtPassword.Text.Trim());
             if (fuUserImage.HasFile)
             {
@@ -129,7 +129,7 @@ namespace FastFoodProject.User
                 txtMobile.Text = dt.Rows[0]["Mobile"].ToString();
                 txtEmail.Text = dt.Rows[0]["Email"].ToString();
                 txtAddress.Text = dt.Rows[0]["Address"].ToString();
-                txtPostCode.Text = dt.Rows[0]["PostCode"].ToString();
+                //txtPostCode.Text = dt.Rows[0]["PostCode"].ToString();
                 imgUser.ImageUrl = String.IsNullOrEmpty(dt.Rows[0]["ImageUrl"].ToString())
                     ? "../Images/No_image.png" : "../" + dt.Rows[0]["ImageUrl"].ToString();
                 imgUser.Height = 200;
@@ -150,7 +150,7 @@ namespace FastFoodProject.User
             txtMobile.Text = string.Empty;
             txtEmail.Text = string.Empty;
             txtAddress.Text = string.Empty;
-            txtPostCode.Text = string.Empty;
+            //txtPostCode.Text = string.Empty;
             txtPassword.Text = string.Empty;
         }
     }

@@ -47,7 +47,7 @@
                                             <h4 class="sub-title">Product</h4>
                                             <div>
                                                 <div class="form-group">
-                                                    <label>Product Name</label>
+                                                    <label>Наименование товара</label>
                                                     <div>
                                                         <asp:TextBox ID="txtName" runat="server" CssClass="form-control"
                                                             placeholder="Enter Product Name"></asp:TextBox>
@@ -59,7 +59,7 @@
                                                 </div>
 
                                                   <div class="form-group">
-                                                    <label>Product Description</label>
+                                                    <label>Описание продукта</label>
                                                     <div>
                                                         <asp:TextBox ID="txtDescription" runat="server" CssClass="form-control"
                                                             placeholder="Enter Product Description" TextMode="MultiLine"></asp:TextBox>
@@ -71,7 +71,7 @@
                                                 </div>
 
                                                 <div class="form-group">
-                                                    <label>Product Price("ky-KG")</label>
+                                                    <label>Цена продукта("com")</label>
                                                     <div>
                                                         <asp:TextBox ID="txtPrice" runat="server" CssClass="form-control"
                                                             placeholder="Enter Product Price"></asp:TextBox>
@@ -86,7 +86,7 @@
                                                 </div>
 
                                                  <div class="form-group">
-                                                    <label>Product Qunatity</label>
+                                                    <label>Количество продукта</label>
                                                     <div>
                                                         <asp:TextBox ID="txtQunatity" runat="server" CssClass="form-control"
                                                             placeholder="Enter Product Qunatity"></asp:TextBox>
@@ -102,7 +102,7 @@
 
 
                                                 <div class="form-group">
-                                                    <label>Product Image</label>
+                                                    <label>Изображение продукта</label>
                                                     <div>
                                                         <asp:FileUpload ID="fuProductImage" runat="server" CssClass="form-control"
                                                             onchange="ImagePreview(this);" />
@@ -110,7 +110,7 @@
                                                 </div>
 
                                                 <div class="form-group">
-                                                    <label>Product Category</label>
+                                                    <label>Категория продукта</label>
                                                     <div>
                                                         <asp:DropDownList ID="ddlCategories" runat="server" CssClass="form-control" 
                                                             DataSourceID="SqlDataSource1" DataTextField="Name" DataValueField="CategoryId"
@@ -154,10 +154,10 @@
                                                       <thead>
                                                       <tr>
                                                           <th class="table-plus">Name</th>
-                                                          <th>Image</th>
-                                                          <th>Price("ky-KG")</th>
-                                                          <th>Qty</th>
-                                                          <th>Category</th>
+                                                          <th>Фото</th>
+                                                          <th>Цена</th>
+                                                          <th>Количество</th>
+                                                          <th>Категория</th>
                                                           <th>IsActive</th>
                                                           <th>Description</th>
                                                           <th>CreatedDate</th>
