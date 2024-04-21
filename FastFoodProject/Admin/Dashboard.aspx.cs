@@ -29,6 +29,8 @@ namespace FastFoodProject.Admin
                     Session["user"] = dashboard.Count("USER");
                     Session["soldAmount"] = dashboard.Count("SOLDAMOUNT");
                     Session["contact"] = dashboard.Count("CONTACT");
+                    Session["reservation"] = dashboard.Count("RESERVATION");
+                    Session["delivery"] = dashboard.Count("DELIVERY");
                 }
             }
         }

@@ -26,7 +26,7 @@
                                 <th>Фото</th>
                                 <th>Цена</th>
                                 <th>Количество</th>
-                                <th>Итоговая цена</th>
+                                <th>Сумма</th>
                                 <th></th>
                             </tr>
                         </thead>
@@ -40,7 +40,7 @@
                         <td>
                             <img width="60" src="<%# Utils.GetImageUrl(Eval("ImageUrl")) %>" alt="" />
                         </td>
-                        <td>$<asp:Label ID="lblPrice" runat="server" Text='<%# Eval("Price") %>'></asp:Label>
+                        <td><asp:Label ID="lblPrice" runat="server" Text='<%# Eval("Price") %>'></asp:Label> Com
                             <asp:HiddenField ID="hdnProductId" runat="server" Value='<%# Eval("ProductId") %>' />
                             <asp:HiddenField ID="hdnQuantity" runat="server" Value='<%# Eval("Qty") %>' />
                             <asp:HiddenField ID="hdnPrdQuantity" runat="server" Value='<%# Eval("PrdQty") %>' />
@@ -58,7 +58,7 @@
                                 </div>
                             </div>
                         </td>
-                        <td>$<asp:Label ID="lblTotalPrice" runat="server"></asp:Label></td>
+                        <td><asp:Label ID="lblTotalPrice" runat="server"></asp:Label> Com</td>
                         <td>
                             <asp:LinkButton ID="lbDelete" runat="server" Text="Remove" CommandName="remove" 
                                 CommandArgument='<%# Eval("ProductId") %>' 
@@ -73,7 +73,7 @@
                             <td class="pl-lg-5">
                                 <b>Grand Total:-</b>
                             </td>
-                            <td>$<% Response.Write(Session["grandTotalPrice"]); %></td>
+                            <td><% Response.Write(Session["grandTotalPrice"]); %> Com</td>
                             <td></td>
                         </tr>
                             <tr>

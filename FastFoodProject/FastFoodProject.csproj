@@ -74,9 +74,11 @@
     <Content Include="Admin\Category.aspx" />
     <Content Include="Admin\Contacts.aspx" />
     <Content Include="Admin\Dashboard.aspx" />
+    <Content Include="Admin\Deliverys.aspx" />
     <Content Include="Admin\OrderStatus.aspx" />
     <Content Include="Admin\Product.aspx" />
     <Content Include="Admin\Report.aspx" />
+    <Content Include="Admin\Reservations.aspx" />
     <Content Include="Admin\Users.aspx" />
     <Content Include="assets\css\animate.css\css\animate.css" />
     <Content Include="assets\css\bootstrap\css\bootstrap.min.css" />
@@ -216,6 +218,8 @@
     <Content Include="TemplateFiles\js\jquery-3.4.1.min.js" />
     <Content Include="User\About.aspx" />
     <Content Include="User\Cart.aspx" />
+    <Content Include="User\Delivery.aspx" />
+    <Content Include="User\Reservation.aspx" />
     <Content Include="User\Contact.aspx" />
     <Content Include="User\Default.aspx" />
     <Content Include="User\Invoice.aspx" />
@@ -256,6 +260,13 @@
     <Compile Include="Admin\Dashboard.aspx.designer.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Deliverys.aspx.cs">
+      <DependentUpon>Deliverys.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Deliverys.aspx.designer.cs">
+      <DependentUpon>Deliverys.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\OrderStatus.aspx.cs">
       <DependentUpon>OrderStatus.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -276,6 +287,13 @@
     </Compile>
     <Compile Include="Admin\Report.aspx.designer.cs">
       <DependentUpon>Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Reservations.aspx.cs">
+      <DependentUpon>Reservations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Reservations.aspx.designer.cs">
+      <DependentUpon>Reservations.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Users.aspx.cs">
       <DependentUpon>Users.aspx</DependentUpon>
@@ -302,6 +320,20 @@
     </Compile>
     <Compile Include="User\Cart.aspx.designer.cs">
       <DependentUpon>Cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Delivery.aspx.cs">
+      <DependentUpon>Delivery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Delivery.aspx.designer.cs">
+      <DependentUpon>Delivery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Reservation.aspx.cs">
+      <DependentUpon>Reservation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Reservation.aspx.designer.cs">
+      <DependentUpon>Reservation.aspx</DependentUpon>
     </Compile>
     <Compile Include="User\Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>

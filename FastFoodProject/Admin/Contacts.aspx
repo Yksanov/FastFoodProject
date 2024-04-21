@@ -38,7 +38,7 @@
                                                   <table class="table data-table-export table-hover nowrap">
                                                       <thead>
                                                       <tr>
-                                                          <th class="table-plus">SrNo</th>
+                                                          <th class="table-plus">№</th>
                                                           <th>User Name</th>
                                                           <th>Email</th>
                                                           <th>Subject</th>

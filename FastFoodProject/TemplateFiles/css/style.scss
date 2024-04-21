@@ -13,7 +13,7 @@ $textCol: #1f1f1f;
 }
 
 @mixin second-font {
-  font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script', cursive;
 }
 
 @mixin hero_btn($col1, $col2, $pad1, $pad2, $bRadius) {
@@ -160,12 +160,13 @@ a:focus {
 }
 
 .header_section {
-  padding: 15px 0;
+    padding: 15px 0;
+    font-size: x-small;
 
-  .container-fluid {
-    padding-right: 25px;
-    padding-left: 25px;
-  }
+    .container-fluid {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
 }
 
 .navbar-brand {

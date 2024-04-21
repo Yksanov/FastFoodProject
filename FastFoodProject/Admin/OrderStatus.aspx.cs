@@ -61,7 +61,7 @@ namespace FastFoodProject.Admin
                 dt = new DataTable();
                 sda.Fill(dt);
                 ddlOrderStatus.SelectedValue = dt.Rows[0]["Status"].ToString();
-                hdnId.Value = dt.Rows[0]["OrderDetailsId"].ToString();
+                hdnId.Value = dt.Rows[0]["Column1"].ToString();
                 pUpdateOrderStatus.Visible = true;
                 LinkButton btn = e.Item.FindControl("lnkEdit") as LinkButton;
                 btn.CssClass = "badge badge-warning";

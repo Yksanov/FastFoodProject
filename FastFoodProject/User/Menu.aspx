@@ -42,7 +42,7 @@
                         <%# Eval("Description") %>
                   </p>
                   <div class="options">
-                    <h6>$<%# Eval("Price") %> </h6>
+                    <h6><%# Eval("Price") %> Сом</h6>
                     <asp:LinkButton runat="server" ID="lbAddToCart" CommandName="addToCart" 
                         CommandArgument='<%# Eval("ProductId") %>'>
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">

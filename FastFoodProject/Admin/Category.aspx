@@ -49,15 +49,15 @@
                                             <h4 class="sub-title">Category</h4>
                                             <div>
                                                 <div class="form-group">
-                                                    <label>Category Name</label>
+                                                    <label>Название категории</label>
                                                     <div>
                                                         <asp:TextBox ID="txtName" runat="server" CssClass="form-control"
-                                                            placeholder="Enter Category Name" required></asp:TextBox>
+                                                            placeholder="Введите название категории" required></asp:TextBox>
                                                         <asp:HiddenField ID="hdnId" runat="server" Value="0" />
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label>Category Image</label>
+                                                    <label>Изображение категории</label>
                                                     <div>
                                                         <asp:FileUpload ID="fuCategoryImage" runat="server" CssClass="form-control"
                                                             onchange="ImagePreview(this);" />
@@ -91,8 +91,8 @@
                                                   <table class="table data-table-export table-hover nowrap">
                                                       <thead>
                                                       <tr>
-                                                          <th class="table-plus">Name</th>
-                                                          <th>Image</th>
+                                                          <th class="table-plus">Наименование</th>
+                                                          <th>Фото</th>
                                                           <th>IsActive</th>
                                                           <th>CreatedDate</th>
                                                           <th class="datatable-nosort">Action</th>

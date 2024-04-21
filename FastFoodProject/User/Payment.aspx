@@ -73,8 +73,8 @@
                             <div class="bg-white shadow-sm pt-4 pl-2 pr-2 pb-2">
                                 <!-- Payment type tabs -->
                                 <ul role="tablist" class="nav bg-light nav-pills rounded nav-fill mb-3">
-                                    <li class="nav-item"><a data-toggle="pill" href="#credit-card" class="nav-link active "><i class="fa fa-credit-card mr-2"></i>Credit Card </a></li>
-                                    <li class="nav-item"><a data-toggle="pill" href="#paypal" class="nav-link "><i class="fa fa-money mr-2"></i>Cash On Delivery </a></li>
+                                    <li class="nav-item"><a data-toggle="pill" href="#credit-card" class="nav-link active "><i class="fa fa-credit-card mr-2"></i>Кредитная карта </a></li>
+                                    <li class="nav-item"><a data-toggle="pill" href="#paypal" class="nav-link "><i class="fa fa-money mr-2"></i>Оплата при доставке </a></li>
                                     <%--<li class="nav-item"><a data-toggle="pill" href="#net-banking" class="nav-link "><i class="fa fa-mobile mr-2"></i>Net Banking </a></li>--%>
                                 </ul>
                                 <!-- End -->
@@ -86,20 +86,20 @@
                                     <div role="form">
                                         <div class="form-group">
                                             <label for="txtName">
-                                                <h6>Card Owner</h6>
+                                                <h6>Владелец карточки</h6>
                                             </label>
-                                            <asp:RequiredFieldValidator ID="rfvName" runat="server" ErrorMessage="Name is required"
+                                            <asp:RequiredFieldValidator ID="rfvName" runat="server" ErrorMessage="Требуется имя"
                                                 ControlToValidate="txtName" ForeColor="Red" Display="Dynamic" SetFocusOnError="true"
                                                 ValidationGroup="card">*</asp:RequiredFieldValidator>
                                             <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server"
                                                 ErrorMessage="Name must be in characters" ForeColor="Red" Display="Dynamic" SetFocusOnError="true"
                                                 ValidationExpression="^[a-zA-Z\s]+$" ControlToValidate="txtName" ValidationGroup="card">*
                                             </asp:RegularExpressionValidator>
-                                            <asp:TextBox ID="txtName" runat="server" CssClass="form-control" placeholder="Card Owner Name"></asp:TextBox>
+                                            <asp:TextBox ID="txtName" runat="server" CssClass="form-control" placeholder="Имя владельца карты"></asp:TextBox>
                                         </div>
                                         <div class="form-group">
                                             <label for="txtCardNo">
-                                                <h6>Card number</h6>
+                                                <h6>Номер карты</h6>
                                             </label>
                                             <asp:RequiredFieldValidator ID="rfvCardNo" runat="server" ErrorMessage="Card number is required"
                                                 ControlToValidate="txtCardNo" ForeColor="Red" Display="Dynamic" SetFocusOnError="true"
@@ -109,13 +109,14 @@
                                                 ValidationExpression="[0-9]{16}" ControlToValidate="txtCardNo" ValidationGroup="card">*
                                             </asp:RegularExpressionValidator>
                                             <div class="input-group">
-                                                <asp:TextBox ID="txtCardNo" runat="server" CssClass="form-control" placeholder="Valid card number"
+                                                <asp:TextBox ID="txtCardNo" runat="server" CssClass="form-control" placeholder="Действительный номер карты"
                                                     TextMode="Number"></asp:TextBox>
                                                 <div class="input-group-append">
                                                     <span class="input-group-text text-muted">
                                                         <i class="fa fa-cc-visa mx-1"></i>
                                                         <i class="fa fa-cc-mastercard mx-1"></i>
                                                         <i class="fa fa-cc-amex mx-1"></i>
+                                                        <i class="fa fa-cc-jcb mx-1"></i>
                                                     </span>
                                                 </div>
                                             </div>
@@ -125,17 +126,17 @@
                                                 <div class="form-group">
                                                     <label>
                                                         <span class="hidden-xs">
-                                                            <h6>Expiration Date</h6>
+                                                            <h6>Срок действия</h6>
                                                         </span>
                                                     </label>
-                                                    <asp:RequiredFieldValidator ID="rfvExpMonth" runat="server" ErrorMessage="Expiry month is required"
+                                                    <asp:RequiredFieldValidator ID="rfvExpMonth" runat="server" ErrorMessage="Укажите месяц истечения срока действия"
                                                         ControlToValidate="txtExpMonth" ForeColor="Red" Display="Dynamic" SetFocusOnError="true"
                                                         ValidationGroup="card">*</asp:RequiredFieldValidator>
                                                     <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" Display="Dynamic"
-                                                        ErrorMessage="Expiry month must be of 2 digits" ForeColor="Red" SetFocusOnError="true"
+                                                        ErrorMessage="Месяц истечения срока действия должен состоять из двух цифр" ForeColor="Red" SetFocusOnError="true"
                                                         ValidationExpression="[0-9]{2}" ControlToValidate="txtExpMonth" ValidationGroup="card">*
                                                     </asp:RegularExpressionValidator>
-                                                    <asp:RequiredFieldValidator ID="rfvExpYear" runat="server" ErrorMessage="Expiry year is required"
+                                                    <asp:RequiredFieldValidator ID="rfvExpYear" runat="server" ErrorMessage="Укажите год истечения срока действия"
                                                         ControlToValidate="txtExpYear" ForeColor="Red" Display="Dynamic" SetFocusOnError="true"
                                                         ValidationGroup="card">*</asp:RequiredFieldValidator>
                                                     <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" Display="Dynamic"
@@ -169,17 +170,17 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="txtAddress">
-                                                <h6>Delivery Address</h6>
+                                                <h6>Адрес доставки</h6>
                                             </label>
-                                            <asp:RequiredFieldValidator ID="rfvAddress" runat="server" ErrorMessage="Address is required" ForeColor="Red"
+                                            <asp:RequiredFieldValidator ID="rfvAddress" runat="server" ErrorMessage="Адрес обязателен" ForeColor="Red"
                                                 ControlToValidate="txtAddress" Display="Dynamic" SetFocusOnError="true" ValidationGroup="card">*
                                             </asp:RequiredFieldValidator>
-                                            <asp:TextBox ID="txtAddress" runat="server" CssClass="form-control" placeholder="Delivery Address"
+                                            <asp:TextBox ID="txtAddress" runat="server" CssClass="form-control" placeholder="Адрес доставки"
                                                 TextMode="MultiLine" ValidationGroup="card"></asp:TextBox>
                                         </div>
                                         <div class="card-footer">
                                             <asp:LinkButton ID="lbCardSubmit" runat="server" CssClass="subscribe btn btn-info btn-block shadow-sm"
-                                                ValidationGroup="card" OnClick="lbCardSubmit_Click">Confirm Payment</asp:LinkButton>
+                                                ValidationGroup="card" OnClick="lbCardSubmit_Click">Подтвердить оплату</asp:LinkButton>
                                         </div>
                                     </div>
                                 </div>
@@ -188,17 +189,17 @@
                                 <div id="paypal" class="tab-pane fade pt-3">
                                     <div class="form-group">
                                         <label for="txtCODAddress">
-                                            <h6>Delivery Address</h6>
+                                            <h6>Адрес доставки</h6>
                                         </label>
-                                        <asp:TextBox ID="txtCODAddress" runat="server" CssClass="form-control" placeholder="Delivery Address"
+                                        <asp:TextBox ID="txtCODAddress" runat="server" CssClass="form-control" placeholder="Адрес доставки"
                                             TextMode="MultiLine"></asp:TextBox>
-                                        <asp:RequiredFieldValidator ID="rfvCODAddress" runat="server" ErrorMessage="Address is required" ForeColor="Red"
+                                        <asp:RequiredFieldValidator ID="rfvCODAddress" runat="server" ErrorMessage="Требуется адрес" ForeColor="Red"
                                             ControlToValidate="txtCODAddress" Display="Dynamic" SetFocusOnError="true" ValidationGroup="cod"
                                             Font-Names="Segoe Script"></asp:RequiredFieldValidator>
                                     </div>
                                     <p>
                                         <asp:LinkButton ID="lbCodSubmit" runat="server" CssClass="btn btn-info" ValidationGroup="cod" OnClick="lbCodSubmit_Click">
-                                            <i class="fa fa-cart-arrow-down mr-2"></i>Confirm Order</asp:LinkButton>
+                                            <i class="fa fa-cart-arrow-down mr-2"></i>Подтвердить заказ</asp:LinkButton>
                                     </p>
                                     <p class="text-muted">
                                         Note: At the of recieving your order, you need to do full payment. 
@@ -210,7 +211,7 @@
                             <!-- End -->
                         </div>
                         <div class="card-footer">
-                            <b class="badge badge-success badge-pill shadow-sm">Order Total: com <% Response.Write(Session["grandTotalPrice"]); %> </b>
+                            <b class="badge badge-success badge-pill shadow-sm">Итог заказа: Com <% Response.Write(Session["grandTotalPrice"]); %> </b>
                             <div class="pt-1">
                                 <asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="Red" ValidationGroup="card"
                                     HeaderText="Fix the following errors" Font-Names="Segoe Script" />

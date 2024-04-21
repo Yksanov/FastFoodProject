@@ -25,7 +25,7 @@ namespace FastFoodProject.User
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            if (txtUsername.Text.Trim() == "Admin" && txtPassword.Text.Trim() == "123")
+            if (txtUsername.Text.Trim() == "Admin" && txtPassword.Text.Trim() == "eldos123")
             {
                 Session["admin"] = txtUsername.Text.Trim();
                 Response.Redirect("../Admin/Dashboard.aspx");

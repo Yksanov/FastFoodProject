@@ -134,8 +134,37 @@
                             </div>
                         </div>
 
-                    </div>
+                         <div class="col-md-6 col-xl-3">
+                            <div class="card widget-card-1">
+                                <div class="card-block-small">
+                                    <i class="icofont icofont-dining-table bg-c-pink card1-icon"></i>
+                                    <span class="text-c-yellow f-w-600">Бронированные столы</span>
+                                    <h4><% Response.Write(Session["reservation"]); %></h4>
+                                    <div>
+                                        <span class="f-left m-t-10 text-muted">
+                                            <a href="Reservations.aspx"><i class="text-c-green f-16 icofont icofont-eye-alt m-r-10"></i>View Details</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card widget-card-1">
+                                <div class="card-block-small">
+                                    <i class="icofont icofont-free-delivery bg-c-blue card1-icon"></i>
+                                    <span class="text-c-green f-w-600">Онлайн доставка</span>
+                                    <h4><% Response.Write(Session["delivery"]); %></h4>
+                                    <div>
+                                        <span class="f-left m-t-10 text-muted">
+                                            <a href="Deliverys.aspx"><i class="text-c-pink f-16 icofont icofont-eye-alt m-r-10"></i>View Details</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
