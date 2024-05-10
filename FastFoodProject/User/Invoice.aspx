@@ -66,7 +66,7 @@
             <div class="text-center">
                 <asp:LinkButton ID="lbDownloadInvoice" runat="server" CssClass="btn btn-info" 
                     OnClick="lbDownloadInvoice_Click">
-                        <i class="fa fa-file-pdf-o mr-2"></i>Download Invoice
+                        <i class="fa fa-file-pdf-o mr-2"></i>Скачать счёт
                 </asp:LinkButton>
             </div>
 

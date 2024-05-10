@@ -40,12 +40,12 @@
                                                             <table class="table data-table-export table-hover nowrap">
                                                                 <thead>
                                                                     <tr>
-                                                                        <th class="table-plus">Order No.</th>
-                                                                        <th>Order Date</th>
-                                                                        <th>Status</th>
-                                                                        <th>Product Name</th>
-                                                                        <th>Total Price</th>
-                                                                        <th>Payment Mode</th>
+                                                                        <th class="table-plus">Номер заказа.</th>
+                                                                        <th>Дата заказа</th>
+                                                                        <th>Статус</th>
+                                                                        <th>Название товара</th>
+                                                                        <th>Сумма</th>
+                                                                        <th>Способ оплаты</th>
                                                                         <th class="datatable-nosort">Edit</th>
                                                                     </tr>
                                                                 </thead>
@@ -57,7 +57,7 @@
                                                                 <td><%# Eval("OrderDate") %> </td>
                                                                 <td>
                                                                     <asp:Label ID="lblStatus" runat="server" Text='<%# Eval("Status") %>'
-                                                                        CssClass='<%# Eval("Status").ToString() == "Delivered" ? "badge badge-success" : "badge badge-warning" %>'>
+                                                                        CssClass='<%# Eval("Status").ToString() == "Доставлен" ? "badge badge-success" : "badge badge-warning" %>'>
                                                                     </asp:Label>
                                                                 </td>
                                                                 <td><%# Eval("Name") %> </td>
@@ -92,9 +92,9 @@
                                                         <div>
                                                             <asp:DropDownList ID="ddlOrderStatus" runat="server" CssClass="form-control">
                                                                 <asp:ListItem Value="0">Select Status</asp:ListItem>
-                                                                <asp:ListItem>Pending</asp:ListItem>
-                                                                <asp:ListItem>Dispatched</asp:ListItem>
-                                                                <asp:ListItem>Delivered</asp:ListItem>
+                                                                <asp:ListItem>В ожидании</asp:ListItem>
+                                                                <asp:ListItem>Отправлен</asp:ListItem>
+                                                                <asp:ListItem>Доставлен</asp:ListItem>
                                                             </asp:DropDownList>
                                                             <asp:RequiredFieldValidator ID="rfvDdlOrderStatus" runat="server" ForeColor="Red" ControlToValidate="ddlOrderStatus"
                                                                 ErrorMessage="Order status is required" SetFocusOnError="true" Display="Dynamic" InitialValue="0"></asp:RequiredFieldValidator>

@@ -15,19 +15,19 @@
                                     <div class="container">
                                         <div class="form-row">
                                           <div class="form-group col-md-4">
-                                            <label>From Date</label>
+                                            <label>Дата начало</label>
                                             <asp:RequiredFieldValidator ID="rfvFromDate" runat="server" ForeColor="Red" ErrorMessage="*" 
                                                 SetFocusOnError="true" Display="Dynamic" ControlToValidate="txtFromDate"></asp:RequiredFieldValidator>
                                             <asp:TextBox ID="txtFromDate" runat="server" TextMode="Date" CssClass="form-control"></asp:TextBox>
                                         </div>
                                         <div class="form-group col-md-4">
-                                            <label>To Date</label>
+                                            <label>Дата окончания</label>
                                             <asp:RequiredFieldValidator ID="rfvToDate" runat="server" ForeColor="Red" ErrorMessage="*" 
                                                 SetFocusOnError="true" Display="Dynamic" ControlToValidate="txtToDate"></asp:RequiredFieldValidator>
                                             <asp:TextBox ID="txtToDate" runat="server" TextMode="Date" CssClass="form-control"></asp:TextBox>
                                         </div>
                                         <div class="form-group col-md-4">
-                                            <asp:Button ID="btnSearch" runat="server" Text="Search" CssClass="btn btn-primary mt-md-4" 
+                                            <asp:Button ID="btnSearch" runat="server" Text="Поиск" CssClass="btn btn-primary mt-md-4" 
                                                 OnClick="btnSearch_Click"/>
                                         </div>
                                      </div>
@@ -37,7 +37,7 @@
                                     <div class="row">
 
                               <div class="col-12 mobile-inputs">
-                                <h4 class="sub-title">Selling Report</h4>
+                                <h4 class="sub-title">Отчет о продажах</h4>
                                   <div class="card-block table-border-style">
                                       <div class="table-responsive">
 
@@ -46,11 +46,11 @@
                                                   <table class="table data-table-export table-hover nowrap">
                                                       <thead>
                                                       <tr>
-                                                          <th class="table-plus">SrNo</th>
-                                                          <th>Full Name</th>
+                                                          <th class="table-plus">№</th>
+                                                          <th>Имя пользователя</th>
                                                           <th>Email</th>
-                                                          <th>Item Orders</th>
-                                                          <th>Total Cost</th>
+                                                          <th>Заказанные товары</th>
+                                                          <th>Итоговая сумма</th>
                                                       </tr>
                                                           </thead>
                                                            <tbody>

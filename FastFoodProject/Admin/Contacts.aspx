@@ -39,11 +39,11 @@
                                                       <thead>
                                                       <tr>
                                                           <th class="table-plus">№</th>
-                                                          <th>User Name</th>
+                                                          <th>Имя пользователя</th>
                                                           <th>Email</th>
-                                                          <th>Subject</th>
-                                                          <th>Message</th>
-                                                          <th>Contact Date</th>
+                                                          <th>Тема</th>
+                                                          <th>Отзывы</th>
+                                                          <th>Дата контакта</th>
                                                           <th class="datatable-nosort">Delete</th>
                                                       </tr>
                                                           </thead>

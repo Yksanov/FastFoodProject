@@ -30,6 +30,15 @@ namespace FastFoodProject.User
                 Session["admin"] = txtUsername.Text.Trim();
                 Response.Redirect("../Admin/Dashboard.aspx");
             }
+
+            //-------
+            else if (txtUsername.Text.Trim() == "Courier" && txtPassword.Text.Trim() == "el123")
+            {
+                Session["courier"] = txtUsername.Text.Trim();
+                Response.Redirect("../Courier/Dashboard1.aspx");
+            }
+            //-------
+
             else
             {
                 con = new SqlConnection(Connection.GetConnectionString());
@@ -52,7 +61,7 @@ namespace FastFoodProject.User
                 else
                 {
                     lblMsg.Visible = true;
-                    lblMsg.Text = "Invalid Credentials..!";
+                    lblMsg.Text = "Неверные учетные данные..!";
                     lblMsg.CssClass = "alert alert-danger";
                 }
             }

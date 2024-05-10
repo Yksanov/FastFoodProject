@@ -1,13 +1,14 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User/User.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="FastFoodProject.User.Login" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-        <script>
+    <script>
         window.onload = function () {
             var seconds = 5;
             setTimeout(function () {
                 document.getElementById("<%=lblMsg.ClientID %>").style.display = "none";
             }, seconds * 1000);
         };
-        </script>
+    </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
@@ -16,13 +17,13 @@
             <div class="heading_container">
                 <div class="align-self-end">
                     <asp:Label runat="server" ID="lblMsg"></asp:Label>
-                 </div>
+                </div>
                 <h2>Login</h2>
             </div>
             <div class="row">
                 <div class="col-md-6">
                     <div class="form_container">
-                        <img id="userLogin" src="../Images/login.jpg" alt="" class="img-thumbnail">
+                        <img id="userLogin" src="../Images/image.png" alt="" class="img-thumbnail">
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -40,13 +41,13 @@
                         </div>
                         <div class="btn_box">
                             <asp:Button ID="btnLogin" runat="server" Text="Login" CssClass="btn btn-success rounded-pill pl-4 pr-4 text-white"
-                                OnClick="btnLogin_Click"/>
+                                OnClick="btnLogin_Click" />
                             <span class="pl-3 text-info">New User? <a href="Registration.aspx" class="bagde bagde-info">Register Here..</a></span>
                         </div>
                     </div>
                 </div>
-             </div>
+            </div>
         </div>
-        </section>
+    </section>
 
 </asp:Content>

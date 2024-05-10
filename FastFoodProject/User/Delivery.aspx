@@ -20,7 +20,7 @@
                 <div class="align-self-end">
                     <asp:Label runat="server" ID="lblMsg"></asp:Label>
                 </div>
-                <h2>Доставка</h2>
+                <h2>Delivery</h2>
             </div>
             <div class="row">
                 <div class="col-md-6">

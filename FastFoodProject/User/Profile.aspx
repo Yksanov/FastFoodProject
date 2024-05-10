@@ -25,7 +25,7 @@
                                                     class="img-thumbnail"/>
                                         <div class="middle pt-2">
                                             <a href="Registration.aspx?id=<%Response.Write(Session["userId"]);%>" class="btn btn-warning">
-                                                <i class="fa fa-pencil"></i>Edit Details
+                                                <i class="fa fa-pencil"></i>Редактировать
                                             </a>
                                       </div>
                                  </div>
@@ -65,12 +65,12 @@
                                     <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
                                         <li class="nav-item">
                                             <a class="nav-link active text-info" id="basicInfo-tab" data-toggle="tab" href="#basicInfo" role="tab"
-                                                aria-control="basicInfo" aria-selected="true"><i class="fa fa-id-badge mr-2"></i>Basic Info</a>
+                                                aria-control="basicInfo" aria-selected="true"><i class="fa fa-id-badge mr-2"></i>Основная информация</a>
                                        </li>
                                         <li class="nav-item">
                                             <a class="nav-link text-info" id="connectedServices-tab" data-toggle="tab" href="#connectedServices" 
                                                 role="tab" aria-controls="connectedServices" aria-selected="false">
-                                                <i class="fa fa-clock-o mr-2"></i>Purchased History</a>
+                                                <i class="fa fa-clock-o mr-2"></i>История покупок</a>
                                         </li>
                                       </ul>
 
@@ -82,7 +82,7 @@
 
                                                             <div class="row">
                                                                 <div class="col-sm-3 col-md-2 col-5">
-                                                                    <label style="font-weight: bold;">Full Name</label>
+                                                                    <label style="font-weight: bold;">Фамилия</label>
                                                                  </div>
                                                                 <div class="col-md-8 col-6">
                                                                     <%# Eval("Name") %>
@@ -91,7 +91,7 @@
                                                             <hr />
                                                             <div class="row">
                                                                 <div class="col-sm-3 col-md-2 col-5">
-                                                                    <label style="font-weight: bold;">Username</label>
+                                                                    <label style="font-weight: bold;">Имя пользователя</label>
                                                                  </div>
                                                                 <div class="col-md-8 col-6">
                                                                     <%# Eval("Username") %>
@@ -100,7 +100,7 @@
                                                            <hr />
                                                             <div class="row">
                                                                 <div class="col-sm-3 col-md-2 col-5">
-                                                                    <label style="font-weight: bold;">Mobile</label>
+                                                                    <label style="font-weight: bold;">Телефон</label>
                                                                  </div>
                                                                 <div class="col-md-8 col-6">
                                                                     <%# Eval("Mobile") %>
@@ -127,7 +127,7 @@
                                                             <hr />
                                                             <div class="row">
                                                                 <div class="col-sm-3 col-md-2 col-5">
-                                                                    <label style="font-weight: bold;">Address</label>
+                                                                    <label style="font-weight: bold;">Адрес</label>
                                                                  </div>
                                                                 <div class="col-md-8 col-6">
                                                                     <%# Eval("Address") %>

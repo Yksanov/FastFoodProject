@@ -82,7 +82,7 @@ namespace FastFoodProject.Admin
                 con.Open();
                 cmd.ExecuteNonQuery();
                 lblMsg.Visible = true;
-                lblMsg.Text = "Order status updated successfully!";
+                lblMsg.Text = "Статус заказа успешно обновлен!";
                 lblMsg.CssClass = "alert alert-success";
                 getOrderStatus();
             }

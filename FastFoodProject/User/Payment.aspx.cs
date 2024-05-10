@@ -111,7 +111,7 @@ namespace FastFoodProject.User
                     DeleteCartItem(productId, transaction, con);
                     // Delete Cart Item End
 
-                    dt.Rows.Add(Utils.GetUniqueId(), productId, quantity, (int)Session["userId"], "Pending",
+                    dt.Rows.Add(Utils.GetUniqueId(), productId, quantity, (int)Session["userId"], "В ожидании",
                         paymentId, Convert.ToDateTime(DateTime.Now));
                 }
                 dr.Close();

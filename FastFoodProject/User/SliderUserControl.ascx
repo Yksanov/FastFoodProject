@@ -58,7 +58,7 @@
                       Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
                     </p>
                     <div class="btn-box">
-                      <a href="" class="btn1">
+                      <a class="nav-link" href="Login.aspx" class="btn1">
                         Order Now
                       </a>
                     </div>

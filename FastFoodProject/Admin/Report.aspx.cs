@@ -45,7 +45,7 @@ namespace FastFoodProject.Admin
                 {
                     grandTotal += Convert.ToDouble(dr["TotalPrice"]);
                 }
-                lblTotal.Text = "Sold Cost: $" + grandTotal;
+                lblTotal.Text = "Общая сумма: Cом " + grandTotal;
                 lblTotal.CssClass = "badge badge-primary";
             }
             rReport.DataSource = dt;
